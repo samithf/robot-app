@@ -10,7 +10,7 @@ interface Props {
 const Box: FC<Props> = ({ box, activeBox }) => {
   return (
     <div
-      className={`bg-white p-10 rounded ${
+      className={`bg-white p-7 rounded ${
         box.x === activeBox.x && box.y === activeBox.y ? "active" : ""
       }`}
     ></div>
