@@ -1,0 +1,4 @@
+.active {
+  background-image: url("../../src//assets/robot.png");
+  background-size: cover;
+}
