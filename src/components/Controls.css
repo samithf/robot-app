@@ -1,0 +1,25 @@
+.controls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 40px 40px;
+}
+
+.top {
+  grid-column: 2 / 3;
+}
+
+.left {
+  grid-column: 1 / 2;
+}
+
+.bottom {
+  grid-column: 2 / 3;
+}
+
+.right {
+  grid-column: 3 / -1;
+}
