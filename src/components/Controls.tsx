@@ -1,5 +1,4 @@
 import React from "react";
-import useBoard from "../hooks/useBoard";
 import "./Controls.css";
 
 enum Direction {

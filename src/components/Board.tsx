@@ -1,7 +1,7 @@
 import React from "react";
 import Box from "./Box";
 import "./Board.css";
-import useBoard, { IBox } from "../hooks/useBoard";
+import { IBox } from "../hooks/useBoard";
 
 const boxes: IBox[] = [];
 
