@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 export interface IBox {
   x: number;
@@ -13,16 +13,16 @@ const useBoard = () => {
 
   const activeBoxRef = React.useRef(activeBox);
 
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+    setCoordinate(e.code);
+  }, []);
+
   useEffect(() => {
     document.addEventListener("keydown", handleKeyDown);
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, []);
-
-  function handleKeyDown(e: KeyboardEvent) {
-    setCoordinate(e.code);
-  }
+  }, [handleKeyDown]);
 
   function setCoordinate(code: string) {
     switch (code) {
