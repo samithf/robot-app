@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { IBox } from "./Board";
+import { IBox } from "./../hooks/useBoard";
 import "./Box.css";
 
 interface Props {
